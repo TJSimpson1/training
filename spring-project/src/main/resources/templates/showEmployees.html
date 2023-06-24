@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Show Employees</title>
+</head>
+<body>
+<h1>Showing employees:</h1>
+
+<table>
+	<thead>
+		<tr>
+			<td>ID</td>
+			<td>First Name</td>
+			<td>Last Name</td>
+			<td>Date Hired</td>
+			<td>Address</td>
+		</tr>
+	</thead>	
+	<tbody>
+		<tr th:each="employee : ${employees}">
+			<td th:text="${employee.id}"></td>
+			<td th:text="${employee.firstName}"></td>
+			<td th:text="${employee.lastName}"></td>
+			<td th:text="${employee.hireDate}"></td>
+			<td th:text="${employee.address}"></td>
+		</tr>
+	</tbody>
+</table>
+<p/>
+
+<a href="/">Return to index</a>
+</body>
+</html>

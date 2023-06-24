@@ -1,0 +1,3 @@
+INSERT INTO book ( id, title, author, isbn, price ) values ( NEXTVAL('HIBERNATE_SEQUENCE'), 'Moby Dick', 'Herman Melville', '2134567890', 50.99 );
+INSERT INTO book ( id, title, author, isbn, price ) values ( NEXTVAL('HIBERNATE_SEQUENCE'), 'Hyperion', 'Dan Simmons', '21345643341', 25.30 );
+INSERT INTO book ( id, title, author, isbn, price ) values ( NEXTVAL('HIBERNATE_SEQUENCE'), 'The Hobbit', 'JRR Tolkien', '8765434567812', 15.99 );

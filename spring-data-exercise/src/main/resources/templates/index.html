@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Index</title>
+</head>
+<body>
+<h1>Product Management System</h1>
+
+<a href="/add-product">Add product</a> <br/>
+<a href="/show-products">Show all products</a>
+
+<p>
+
+<form method="post" th:action="@{search-by-supplier}">
+	<label>Search by supplier</label>
+	<input name="supplier" type="text" />
+	<input type="submit" value="Search" />
+</form>
+
+<form method="post" th:action="@{search-by-make}">
+	<label>Search by make</label>
+	<input name="make" type="text" />
+	<input type="submit" value="Search" />
+</form>
+
+<form method="post" th:action="@{search-by-max-price}">
+	<label>Max Price</label>
+	<input name="price" type="number" step="0.01" />
+	<input type="submit" value="Search" />
+</form>
+
+</body>
+</html>

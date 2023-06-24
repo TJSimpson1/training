@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>User Client Exercise</title>
+</head>
+<body>
+	<h2>User Client</h2>
+	<hr>
+	<form method="POST" th:action="@{login}">
+		<div>
+			<label>Username: </label>
+			<input type="text" name="username">
+		</div>
+		<div>
+			<label>Password: </label>
+			<input type="text" name="password">
+		</div>
+		<div>
+			<input type="submit" value="Login">
+		</div>
+	</form>
+	
+	<a th:href="@{registerUser}">Register user</a>
+	
+	<hr>
+	<h2>All users</h2>
+	<table>
+		<thead>
+			<tr>
+				<th align="left">First Name</th>
+				<th align="left">Last Name</th>
+				<th align="left">Username</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr th:each="user : ${listOfUsers}">
+				<td th:text="${user.firstName}"></td>
+				<td th:text="${user.lastName}"></td>
+				<td th:text="${user.username}"></td>
+			</tr>
+		</tbody>
+	</table>
+	
+</body>
+</html>

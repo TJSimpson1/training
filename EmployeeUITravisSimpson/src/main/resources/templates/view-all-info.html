@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>View all info</title>
+</head>
+<body>
+	<h2>Full details of employee: <span th:text="${employee.firstName}"></span> <span th:text="${employee.lastName}"></span></h2>
+	
+	<hr>
+	<table>
+		<thead>
+			<tr>
+				<th align="left">ID</th>
+				<th align="left">First Name</th>
+				<th align="left">Last Name</th>
+				<th align="left">Salary</th>
+				<th align="left">State</th>
+				<th align="left">Country</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td th:text="${employee.id}"></td>
+				<td th:text="${employee.firstName}"></td>
+				<td th:text="${employee.lastName}"></td>
+				<td th:text="${employee.salary}"></td>
+				<td th:text="${employee.state}"></td>
+				<td th:text="${employee.country}"></td>
+				<td>
+					<a th:href="@{editEmployee(id=${employee.id})}">Edit</a> |
+					<a th:href="@{deleteEmployee(id=${employee.id})}" style="color:red; font-weight:bold">X</a>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<hr>
+	<a th:href="@{getHome}">Home</a> <br>
+	<a th:href="allEmployees">Back</a>
+</body>
+</html>

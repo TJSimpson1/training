@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Index</title>
+</head>
+<body>
+<h1>Book Management System</h1>
+
+<a href="/add-book">Add new book</a> <br/>
+<a href="/show-books">Show all books</a>
+
+<p>
+
+<form method="post" th:action="@{search-by-author}">
+	<label>Search by author</label>
+	<input name="author" type="text" />
+	<input type="submit" value="Search" />
+</form>
+
+<form method="post" th:action="@{search-by-genre}">
+	<label>Search by genre</label>
+	<input name="genre" type="text" />
+	<input type="submit" value="Search" />
+</form>
+
+<form method="post" th:action="@{search-by-price-less-than}">
+	<label>Search by price less than</label>
+	<input name="price" type="number" step="0.01" />
+	<input type="submit" value="Search" />
+</form>
+
+
+</body>
+</html>

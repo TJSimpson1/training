@@ -1,0 +1,3 @@
+INSERT INTO employee ( id, firstName, lastName, salary, state, country ) values ( NEXTVAL('HIBERNATE_SEQUENCE'), 'Travis', 'Simpson', 20000, 'Bavaria', 'Germany' );
+INSERT INTO employee ( id, firstName, lastName, salary, state, country ) values ( NEXTVAL('HIBERNATE_SEQUENCE'), 'John', 'Doe', 25000, 'New York', 'USA' );
+INSERT INTO employee ( id, firstName, lastName, salary, state, country ) values ( NEXTVAL('HIBERNATE_SEQUENCE'), 'Jane', 'Doe', 30000, 'London', 'UK' );

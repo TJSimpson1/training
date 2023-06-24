@@ -1,0 +1,33 @@
+package com.fdmgroup.json;
+
+public class Trainee {
+	private String name;
+	private String stream;
+	private Academy academy;
+	private boolean signedOff;
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	public String getStream() {
+		return stream;
+	}
+	public void setStream(String stream) {
+		this.stream = stream;
+	}
+	public Academy getAcademy() {
+		return academy;
+	}
+	public void setAcademy(Academy academy) {
+		this.academy = academy;
+	}
+	public boolean isSignedOff() {
+		return signedOff;
+	}
+	public void setSignedOff(boolean signedOff) {
+		this.signedOff = signedOff;
+	}
+	
+}
