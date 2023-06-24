@@ -1,0 +1,9 @@
+.registerProduct{
+    text-align: left;
+}
+
+.error {
+    color: red;
+    display: inline;
+    margin-left: 10px;
+}

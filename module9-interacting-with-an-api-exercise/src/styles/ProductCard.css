@@ -1,0 +1,24 @@
+.card{
+    position: relative;
+    width: 30%;
+    background: cyan;
+    margin-left: auto;
+    margin-right: auto;
+    border: 3px solid black;
+    margin-bottom: 5px;
+    padding: 2px 5px;
+}
+
+.description {
+    text-align: left;
+}
+
+.price {
+    position: absolute;
+    bottom: -10px;
+}
+
+.addButton {
+    display: block;
+    margin-left: auto;
+}
