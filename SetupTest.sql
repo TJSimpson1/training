@@ -1,0 +1,8 @@
+SELECT BROKER_ID
+FROM brokers;
+
+SELECT FIRST_NAME, LAST_NAME
+FROM brokers;
+
+SELECT *
+FROM trades;
